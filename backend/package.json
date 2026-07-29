@@ -1,18 +1,8 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false
+  "name": "frigopom",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd backend && npm install --include=dev && npm run build",
+    "start": "node backend/dist/main"
   }
 }
